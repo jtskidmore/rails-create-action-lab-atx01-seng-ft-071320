@@ -35,3 +35,13 @@ Make sure to use a route helper method to redirect to the `show` page at the end
 * [Documentation](http://api.rubyonrails.org/classes/ActiveRecord/Persistence/ClassMethods.html)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-create-action-lab' title='Create Action Lab'>Create Action Lab</a> on Learn.co and start learning to code for free.</p>
+
+############
+
+<h3>Student Form</h3>
+<form class="" action="<%=students_path %>" method="post">
+  <input type="text" id="first_name" name="student[first_name]" value="">
+  <input type="text" id="last_name" name="student[last_name]" value="">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" name="submit" value="Submit Student">
+</form>
